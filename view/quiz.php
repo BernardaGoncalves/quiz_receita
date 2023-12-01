@@ -12,8 +12,8 @@
       <ul class="single-mega cn-col-4">
         <li><a href="#">Início</a></li>
         <li><a href="quiz.php">Quiz</a></li>
-        <li><a href="receitas.php">Receitas</a></li>
-        <li><a href="about.php">Sobre</a></li>
+        <li><a href="receitas.php">Recipes</a></li>
+        <li><a href="about.php">About</a></li>
       </ul>
     </div>
 			
