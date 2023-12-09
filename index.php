@@ -1,11 +1,30 @@
+
+
+
+
+
+
+<?php include_once './config/config.php';
+
+/*if(isset($_session['userloged']) == true){
+    echo 'verdadeiro';
+}else{
+    header('location: login.php');
+}
+*/?>
+
+
+
 <!DOCTYPE html>
 <html>
-<?php include './adm/partes/head.php';?>
+
+<?php include_once './partes/head.php';?>
 
 <body>
-<?php include './pages/home.php';?>
 
-<?php include './adm/partes/footer.php';?>
+<?php include_once './home.php';?>
+
+<?php include_once './partes/footer.php';?>
 
 </body>
 </html>
