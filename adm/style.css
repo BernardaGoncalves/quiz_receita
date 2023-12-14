@@ -38,3 +38,7 @@ button {
     border: none;
     cursor: pointer;
 }
+
+button a{
+    text-decoration: none;
+}

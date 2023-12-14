@@ -1,5 +1,5 @@
 <?php
-include "conection.php";
+include "../conection.php";
 ?>
 <!DOCTYPE html>
 <html>
@@ -23,7 +23,7 @@ include "conection.php";
                 </div>
                 <div class="input-box">
                 <label >Senha:</label>
-				<input type="password"  name="Password"><br><br>
+				<input type="password"  name="password"><br><br>
                 </div>
 				
 				<button type='submit' name="submit1" class='btn'>Registrar</button>
@@ -39,30 +39,8 @@ include "conection.php";
 			</form>
             </div>
 	<?php
-        if(isset($_POST["submit1"])){
-
-            $count=0;
-            $res=mysqli_query($link, "select * from regisstro where username='$_POST[username]'") or die(mysqli_error($link));
-            $count=mysqli_num_rows($res);
-
-            if($count> 0){
-                ?>
-                    <script type="text/javascript">
-                        document.getElementById("sucesso").style.display="block";
-                        document.getElementById("falha").style.display="none";
-                        </script>
-                <?php
-            }
-            else {
-                mysqli_query($link,"insert into regisstro values(NULL, '$_POST[username]','$_POST[email]','$_POST[password]')") or die(mysqli_error($link));
-                ?>
-                <script type="text/javascript">
-                        document.getElementById("sucesso").style.display="none";
-                        document.getElementById("falha").style.display="block";
-                </script>
-                <?php
-            }
-        }
+        
+include "../controller/RegistroHandler.php";
     ?>
 </body>
 </html>

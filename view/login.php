@@ -1,5 +1,5 @@
 <?php
-include "conection.php"
+include "../conection.php"
 ?>
 <!DOCTYPE html>
 <html>
@@ -39,25 +39,7 @@ include "conection.php"
 			</form>
 		</div>
 	<?php
-		if(isset($_POST["login"]) ) {
-			$count=0;
-			$res = mysqli_query($link,"select * from regisstro where username='$_POST[username]' && password='$_POST[password]'");
-			$count=mysqli_num_rows($res);
-			if($count== 0) {	
-				?>
-					<script type="text/javascript">
-	                    document.getElementById("falha").style.display="block";
-					</script>
-				<?php
-			}
-			else{
-				?>
-					<script type="text/javascript">
-						window.location="index.php";
-					</script>
-				<?php
-			}
-		}
+		include "../controller/login.php"
 	?>
 </body>
 </html>

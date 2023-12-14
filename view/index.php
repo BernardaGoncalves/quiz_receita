@@ -1,3 +1,20 @@
+
+
+
+
+
+
+<?php include_once '../config/config.php';
+
+/*if(isset($_session['userloged']) == true){
+    echo 'verdadeiro';
+}else{
+    header('location: login.php');
+}
+*/?>
+
+
+
 <!DOCTYPE html>
 <html>
 <?php include_once './partes/head.php';?>
@@ -14,13 +31,13 @@
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="./img/bg-img/r4.jpg" alt="First slide">
+                <img class="d-block w-100" src="../public/img/bg-img/r4.jpg" alt="First slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="./img/bg-img/r5.jpg" alt="Second slide">
+                <img class="d-block w-100" src="../public/img/bg-img/r5.jpg" alt="Second slide">
             </div>
             <div class="carousel-item">
-                <img class="d-block w-100" src="./img/bg-img/r6.jpg" alt="Third slide">
+                <img class="d-block w-100" src="../public/img/bg-img/r6.jpg" alt="Third slide">
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -39,7 +56,7 @@
 <div class="container div row">
     <div class="col-md-4">
         <div class="card" >
-            <img src="./img/bg-img/insta2.jpg" class="img recipe-img" alt="...">
+            <img src="../public/img/bg-img/insta2.jpg" class="img recipe-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Bolo de chocolate</h5>
                 <p class="card-text">Duração: 45min | Sobremesa</p>
@@ -52,7 +69,7 @@
     </div>
     <div class="col-md-4">
         <div class="card" >
-            <img src="./img/bg-img/insta2.jpg" class="img recipe-img" alt="...">
+            <img src="../public/img/bg-img/insta2.jpg" class="img recipe-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Gambas ao alho</h5>
                 <p class="card-text">Duração: 30min | Aperitivo</p>
@@ -64,7 +81,7 @@
     </div>
     <div class="col-md-4">
         <div class="card" >
-            <img src="./img/bg-img/insta2.jpg" class="img recipe-img" alt="...">
+            <img src="../public/img/bg-img/insta2.jpg" class="img recipe-img" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Arroz chau chau</h5>
                 <p class="card-text">Duração: 1h30min  |  Almoço</p>
@@ -119,6 +136,9 @@ var timer = setInterval(function() {
 </script>
 </div>
 
+<?php include_once './partes/footer.php';?>
+
 </body>
 
 </html>
+
